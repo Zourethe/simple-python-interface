@@ -8,7 +8,7 @@
     Date: July, 17, 2023
 '''
 
-# Library imports.
+# Libraries imports.
 import tkinter
 import tkinter.font
 
