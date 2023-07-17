@@ -23,7 +23,7 @@ frame.pack()
 # Font definition.
 font = tkinter.font.Font(family = "Arial", size = 24)
 
-# Action when the button is pressed.
+# Execute method definition.
 def execute():
     print("Output")
 
