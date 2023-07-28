@@ -8,32 +8,24 @@
     Date: July, 17, 2023
 '''
 
-# Libraries imports.
+# Imports.
 import tkinter
 import tkinter.font
 
-# Variables definition.
+# Variables.
 text = str('Press the button above')
-
-# Root variable definition.
 root = tkinter.Tk()
 frame = tkinter.Frame(root, height = 500, width = 500)
-frame.pack()
-
-# Font definition.
 font = tkinter.font.Font(family = "Arial", size = 24)
+button = tkinter.Button(root, text = "Press me", font = font, command = execute, fg = '#0000FF')
+label = tkinter.Label(root, text = text, font = font, fg = '#FF0000')
 
-# Execute method definition.
+# Execute method.
 def execute():
     print("Output")
 
-# Button definition.
-button = tkinter.Button(root, text = "Press me", font = font, command = execute, fg = '#0000FF')
-
-# Label definition.
-label = tkinter.Label(root, text = text, font = font, fg = '#FF0000')
-
-# Packs definition.
+# Packs.
+frame.pack()
 button.pack(padx = 0, pady = 10, side = tkinter.TOP)
 label.pack(padx = 0, pady = 0, side = tkinter.BOTTOM)
 
